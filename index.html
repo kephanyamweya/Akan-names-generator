@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,34 +9,37 @@
     <link rel="stylesheet" href="static/css/styles.css">
     <title>Akan-name-generator</title>
 </head>
+
 <body>
-        <div id="heading">
-            <h1>Akan Names Calculator</h1>
-            <h2>Know Your Akan Name Now!!</h2>
-        </div1>
-       <form>
-        
+    <div id="heading">
+        <h1>Akan Names Calculator</h1>
+        <h2>Know Your Akan Name Now!!</h2>
+    </div>
             <h2>Enter Your Details Here!</h2>
             <div class="form">
+                <form action="input">
                 <label>Day</label><br>
-                <input type="text" id="day" placeholder="dd" required><br>
+                <input type="number" id="day" placeholder="dd" required><br>
                 <label>Month</label><br>
-                <input type="text" id="month" placeholder="mm" required><br>
+                <input type="number" id="month" placeholder="mm" required><br>
                 <label>Year</label><br>
-                <input type="text" id="year" placeholder="yy" required><br>
+                <input type="number" id="year" placeholder="yy" required><br>
                 <label>Gender</label><br>
                 <input type="radio" name="gender" id="gender" value="male" checked> Male<br>
                 <input type="radio" name="gender" id="gender" value="female" checked> Female<br><br>
-              </div>
-              <div class="sbmt">
-                <a href="#result"><button type="button" name="button" class="btn btn-primary "
-                    onclick="submition();">Submit</button></a>
-              </div>
-         
-              <p class="card-text">Frequently in Ghana, children are given their first name as a 'day name' 
+                </form>
+            </div>
+            <div class="submit">
+                <button type="button" name="button" class="btn btn-primary "
+                    onclick="JavaScript:submition();">Submit</button>
+            </div>
+
+            <div class="description"><p class="card-text">Frequently in Ghana, children are given their first name as a 'day name'
                 which corresponds to the day in the week they were born.</p>
             </div>
-            </div>
-        <script src="static/JS/main.js"></script>
+    <div id="result">
+        <p id="final"></p>
+    </div>
+    <script src="static/JS/main.js"></script>
 </body>
 </html>

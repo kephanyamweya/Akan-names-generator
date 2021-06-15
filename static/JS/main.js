@@ -1,22 +1,22 @@
-function calculate () {
-  let day = document.getElementsById("day").value;
-  let dd = parseInt(day);
-  let month = document.getElementsById("month").value;
-  let mm = parseInt(month);
-  let year = document.getElementsById("year").value;
-  let year = parseInt(year.to String().slice(2, 4));
+function submition() {
+  var day = document.getElementById("day").value;
+  var dd = parseInt(day);
+  var month = document.getElementById("month").value;
+  var mm = parseInt(month);
+  var year = document.getElementById("year").value;
+  var yy = parseInt(year.toString().slice(2, 4));
   // var cc=(yy-1)/100+1;
-  let cc = Math.ceil(year/100)
+  var cc = Math.ceil(year/100)
   /* formula*/
-  let result = parseInt(((cc / 4) - 2 * cc - 1) + ((5 * yy / 4)) + ((26 * (mm + 1) / 10)) + dd) % 7;
+  var result = parseInt(((cc / 4) - 2 * cc - 1) + ((5 * yy / 4)) + ((26 * (mm + 1) / 10)) + dd) % 7;
 
-  let maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
-  let femaleNames = ["Akosua", " Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+  var maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+  var femaleNames = ["Akosua", " Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
   if (document.getElementById("gender").checked) {
-    let gender = 'male';
+    var gender = 'male';
   }
   else {
-    let gender = 'female';
+    var gender = 'female';
   }
   if(dd<=0 || dd >31){
     alert("Enter correct date");
@@ -67,7 +67,7 @@ function calculate () {
     document.getElementById("final").innerHTML = ("You were born on Saturday, your Akan Name is " + femaleNames[6]);
   }
   else {
-    alert (fill all spaces)
+    alert ('fill all spaces')
   }
 }
 
